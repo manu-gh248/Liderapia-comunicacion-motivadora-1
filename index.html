@@ -2,11 +2,78 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Avatar HeyGen</title>
+  <title>LIDERAPIA | Avatar HeyGen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fuente moderna y minimalista -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #212529;
+      --secondary: #6c757d;
+      --accent: #ADFF2F;
+      --bg: #f8fafc;
+      --white: #fff;
+    }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg);
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: var(--primary);
+      min-height: 100vh;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+      text-align: center;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-size: 2.6rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      letter-spacing: 0.1em;
+      box-shadow: 0 4px 16px rgba(33,37,41,0.04);
+    }
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    p {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: var(--secondary);
+      max-width: 350px;
+      font-weight: 500;
+    }
+    @media (max-width: 600px) {
+      .container { min-height: 60vh; }
+      .logo { width: 64px; height: 64px; font-size: 2rem;}
+      h1 { font-size: 1.3rem; }
+      p { font-size: 1rem;}
+    }
+  </style>
 </head>
-<body style="margin:0; padding:0; background:#f9f9f9;">
-  <!-- Avatar HeyGen embebido -->
+<body>
+  <div class="container">
+    <div class="logo">L</div>
+    <h1>LIDERAPIA | Comunicación Motivadora</h1>
+    <p>Bienvenido/a a la demo interactiva.<br>
+      Tu avatar AI personalizado de HeyGen está listo para acompañarte en cada sesión.
+    </p>
+  </div>
+  <!-- Avatar HeyGen embebido, flotante -->
   <script>
     !function(window){
       const host="https://labs.heygen.com",
@@ -23,19 +90,5 @@
       iframe.title="Streaming Embed",
       iframe.role="dialog",
       iframe.allow="microphone",
-      iframe.src=url;
-      let visible=!1,initial=!1;
-      window.addEventListener("message",(e=>{
-        e.origin===host&&e.data&&e.data.type&&"streaming-embed"===e.data.type&&(
-        "init"===e.data.action?(initial=!0,wrapDiv.classList.toggle("show",initial)):
-        "show"===e.data.action?(visible=!0,wrapDiv.classList.toggle("expand",visible)):
-        "hide"===e.data.action&&(visible=!1,wrapDiv.classList.toggle("expand",visible))
-        )}));
-      container.appendChild(iframe),
-      wrapDiv.appendChild(stylesheet),
-      wrapDiv.appendChild(container),
-      document.body.appendChild(wrapDiv)
-    }(globalThis);
-  </script>
-</body>
-</html>
+      iframe.src=url
+
