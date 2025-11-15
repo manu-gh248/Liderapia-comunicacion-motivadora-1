@@ -89,11 +89,12 @@
             -->
             <img src="https://i.ibb.co/DfZXCBf2/LIDERAPIA-LOGO-03-GRIS.png" alt="Liderapia Logo" class="h-12 w-auto">
         </div>
-        <!-- Texto con fondo negro -->
-        <div class="bg-liderapia-yellow text-center py-4 px-6">
-            <p class="text-brand text-lg md:text-xl text-[#FEBB00]">Comunicación motivadora · Reconocimiento y  refuerzo</p>
-        </div>
-    </header>
+        ader>
+
+            <!-- Sección de Título con fondo amarillo -->
+    <section class="bg-[#FEBB00] text-center py-4 px-6">
+        <p class="text-brand text-lg md:text-xl text-black font-normal">Comunicación motivadora · Reconocimiento y refuerzo</p>
+    </section>
 
     <!-- Sección Principal (Hero) --><main>
         <section class="hero-background relative py-24 md:py-32 text-center">
@@ -174,6 +175,3 @@
   `;const iframe=document.createElement("iframe");iframe.allowFullscreen=!1,iframe.title="Streaming Embed",iframe.role="dialog",iframe.allow="microphone",iframe.src=url;let visible=!1,initial=!1;window.addEventListener("message",(e=>{e.origin===host&&e.data&&e.data.type&&"streaming-embed"===e.data.type&&("init"===e.data.action?(initial=!0,wrapDiv.classList.toggle("show",initial)):"show"===e.data.action?(visible=!0,wrapDiv.classList.toggle("expand",visible)):"hide"===e.data.action&&(visible=!1,wrapDiv.classList.toggle("expand",visible)))})),container.appendChild(iframe),wrapDiv.appendChild(stylesheet),wrapDiv.appendChild(container),document.body.appendChild(wrapDiv)}(globalThis);</script>
 
 </body>
-</html>
-
-
