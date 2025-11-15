@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liderapia - Asistente Virtual</title>
 
-    <!-- Importación de Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importación de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Importación de la tipografía Poppins (Light 300, Regular 400, Bold 500) --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Importación de la tipografía Poppins (Light 300, Regular 400, Bold 500) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <!-- Configuración de Tailwind para usar la identidad de Liderapia --><script>
+    <!-- Configuración de Tailwind para usar la identidad de Liderapia -->
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -39,7 +42,7 @@
         /* Aplicamos los pesos de fuente específicos del brandbook */
         .h1-brand {
             font-family: 'Poppins', sans-serif;
-            font-weight: 500; /* Cambiado de 900 (Black) a 500 (Bold) */
+            font-weight: 500; /* Bold */
                   }
         .h2-brand {
             font-family: 'Poppins', sans-serif;
@@ -52,7 +55,7 @@
 
         /* Estilos para la sección Hero con la imagen de fondo */
         .hero-background {
-            background-image: url('https://i.ibb.co/N63z4R0r/brandbook-9.jpg'); /* URL actualizada */
+            background-image: url('https://i.ibb.co/N63z4R0r/brandbook-9.jpg');
             background-size: cover;
             background-position: center;
             position: relative;
@@ -83,20 +86,17 @@
     <!-- Header con Logo Centrado -->
     <header class="border-b border-liderapia-black bg-liderapia-black">
         <div class="container mx-auto px-6 py-6 flex justify-center items-center">
-            <!-- 
-              URL Corregida: Esta es la URL de la imagen directa (.png)
-              que me has proporcionado.
-            -->
             <img src="https://i.ibb.co/DfZXCBf2/LIDERAPIA-LOGO-03-GRIS.png" alt="Liderapia Logo" class="h-12 w-auto">
         </div>
-        ader>
+    </header>
 
-            <!-- Sección de Título con fondo amarillo -->
+     <!-- Sección de Título con fondo amarillo -->
     <section class="bg-[#FEBB00] text-center py-4 px-6">
         <p class="text-brand text-lg md:text-xl text-black font-normal">Comunicación motivadora · Reconocimiento y refuerzo</p>
     </section>
 
-    <!-- Sección Principal (Hero) --><main>
+    <!-- Sección Principal (Hero) -->
+    <main>
         <section class="hero-background relative py-24 md:py-32 text-center">
             <div class="hero-content container mx-auto px-6">
                 <h1 class="h1-brand text-4xl md:text-6xl lg:text-7xl mb-6 text-liderapia-white">
@@ -108,20 +108,14 @@
                 <p class="text-brand text-lg text-gray-100 mb-10 max-w-2xl mx-auto">
                     Interactúa con nuestra inteligencia artificial para potenciar y consolidar tu evolución en comunicación. El avatar aparecerá en la esquina inferior. Simplemente haz clic en él, selecciona tu idioma y comienza la conversación en cualquier momento.
                 </p>
-                
-                <!-- Call to Action (Botón con color de marca) --><!-- 
-                <a href="#" 
-                   class="h1-brand inline-block bg-liderapia-red text-liderapia-white text-lg py-4 px-10 rounded-full shadow-lg hover:bg-opacity-90 transition-all transform hover:scale-105">
-                    Conocer Más
-                </a>
-                -->
             </div>
         </section>
 
         
     </main>
 
-    <!-- Footer --><footer class="mt-24 border-t border-liderapia-black bg-liderapia-black">
+    <!-- Footer -->
+    <footer class="mt-24 border-t border-liderapia-black bg-liderapia-black">
         <div class="container mx-auto px-6 py-8 text-center text-gray-500 text-brand">
             &copy; 2025 Liderapia. Todos los derechos reservados.
         </div>
@@ -137,7 +131,8 @@
       SCRIPT DE HEYGEN
       Este es el script que proporcionaste, insertado tal cual.
       Cargará el avatar de HeyGen sobre la página.
-    --><script>!function(window){const host="https://labs.heygen.com",url=host+"/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJKdW5lX0hSX3B1YmxpYyIsInByZXZpZXdJ%0D%0AbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3YzLzc0NDQ3YTI3ODU5YTQ1NmM5%0D%0ANTVlMDFmMjFlZjE4MjE2XzQ1NjIwL3ByZXZpZXdfdGFsa18xLndlYnAiLCJuZWVkUmVtb3ZlQmFj%0D%0Aa2dyb3VuZCI6ZmFsc2UsImtub3dsZWRnZUJhc2VJZCI6ImRjZjQxN2E0MzRmNTQ3YWE5NTg0NmU3%0D%0AN2FmZTQzZTA4IiwidXNlcm5hbWUiOiI5ODg1ZDU2MTI4ZTU0ZThkYjI0ZTllNjEwZmUyZWQwNiJ9&inIFrame=1",clientWidth=document.body.clientWidth,wrapDiv=document.createElement("div");wrapDiv.id="heygen-streaming-embed";const container=document.createElement("div");container.id="heygen-streaming-container";const stylesheet=document.createElement("style");stylesheet.innerHTML=`
+    -->
+    <script>!function(window){const host="https://labs.heygen.com",url=host+"/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJKdW5lX0hSX3B1YmxpYyIsInByZXZpZXdJ%0D%0AbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3YzLzc0NDQ3YTI3ODU5YTQ1NmM5%0D%0ANTVlMDFmMjFlZjE4MjE2XzQ1NjIwL3ByZXZpZXdfdGFsa18xLndlYnAiLCJuZWVkUmVtb3ZlQmFj%0D%0Aa2dyb3VuZCI6ZmFsc2UsImtub3dsZWRnZUJhc2VJZCI6ImRjZjQxN2E0MzRmNTQ3YWE5NTg0NmU3%0D%0AN2FmZTQzZTA4IiwidXNlcm5hbWUiOiI5ODg1ZDU2MTI4ZTU0ZThkYjI0ZTllNjEwZmUyZWQwNiJ9&inIFrame=1",clientWidth=document.body.clientWidth,wrapDiv=document.createElement("div");wrapDiv.id="heygen-streaming-embed";const container=document.createElement("div");container.id="heygen-streaming-container";const stylesheet=document.createElement("style");stylesheet.innerHTML=`
   #heygen-streaming-embed {
     z-index: 9999;
     position: fixed;
